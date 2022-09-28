@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lashawn's Resume</title>
+    <script src="https://kit.fontawesome.com/4b1407df93.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: rgb(87, 35, 170); 
+            --text-color: white; 
+            --secondary-color: rgb(194, 44, 231); 
+        }
+
+        body, html {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        #resume {
+            background-color: var(--secondary-color);
+            padding: 30px 0;
+            width: 100%;
+            
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .container h1 {
+            margin-bottom: 1rem;
+        }
+
+        .timeline {
+            padding: 30px 0 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timeline ul {
+            list-style: none;
+            padding: 50px 0;
+    
+        }
+
+
+
+        .timeline ul li {
+            background-color: var(--text-color);
+            max-width: 6px;
+            position: relative;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        .timeline ul li div {
+            position: relative;
+            bottom: 0;
+            width: 400px;
+            padding: 1rem;
+            background-color: var(--secondary-color);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .timeline ul li:nth-child(odd) div {
+            left: 40px;
+        }
+        
+        .timeline ul li:nth-child(even) div {
+            left: -434px;
+        }
+
+        .timeline ul li:after {
+            content: '';
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+           
+        }
+
+        .timeline ul li div:before {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            width: 0;
+            height: 0;
+            bottom: 5px;
+        }
+
+        .timeline ul li:nth-child(odd) div:before {
+            border-width: 8px 16px 8px 0px;
+            border-color: transparent var(--secondary-color);
+            left: -15px;
+            
+        }
+
+        .timeline ul li:nth-child(even) div:before {
+            border-width: 8px 0px 8px 16px;
+            border-color: transparent var(--secondary-color);
+            right: -15px;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header id="resume">
+        <div class="container">
+            <h1><i class="fa-solid fa-brain"></i> Knowledge Resume</h1>
+            <h3><i class="fa-solid fa-user"></i> Lashawn Hamb</h3>
+        </div>
+    </header>
+    <section class="timeline">
+        <ul>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolorum dignissimos 
+                        accusamus velit nulla tempore tenetur vel quasi laudantium nobis?</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolorum dignissimos 
+                        accusamus velit nulla tempore tenetur vel quasi laudantium nobis?</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolorum dignissimos 
+                        accusamus velit nulla tempore tenetur vel quasi laudantium nobis?</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolorum dignissimos 
+                        accusamus velit nulla tempore tenetur vel quasi laudantium nobis?</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolorum dignissimos 
+                        accusamus velit nulla tempore tenetur vel quasi laudantium nobis?</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolorum dignissimos 
+                        accusamus velit nulla tempore tenetur vel quasi laudantium nobis?</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolorum dignissimos 
+                        accusamus velit nulla tempore tenetur vel quasi laudantium nobis?</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolorum dignissimos 
+                        accusamus velit nulla tempore tenetur vel quasi laudantium nobis?</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolorum dignissimos 
+                        accusamus velit nulla tempore tenetur vel quasi laudantium nobis?</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolorum dignissimos 
+                        accusamus velit nulla tempore tenetur vel quasi laudantium nobis?</p>
+                </div>
+            </li>
+        </ul>  
+    </section>
+</body>
+</html>

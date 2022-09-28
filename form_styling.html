@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Form</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+        /*reset*/
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.4;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: green;
+        }
+
+        /*form*/
+
+        .showcase {
+            width: 100%;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-color:bisque;
+        }
+
+        .form-container {
+            background-color:azure;
+            margin-top: 20px;
+            padding: 20px 20px;
+            border-radius: 10px;
+        }
+
+        .form-container .head-content {
+            text-align: center;
+        }
+
+        .form-container .form-itself p {
+            text-align: center;
+        }
+
+        ..form-itself {
+            width: 100%;
+        }
+
+        .form-container .form-itself .control-flow {
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        .form-container .form-itself .control-flow label {
+            display: block;
+        }
+
+        .form-container .form-itself .control-flow input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: rgba(128, 128, 128, 0.774) 1px solid;
+        }
+
+        input:focus {
+            outline: green 2px solid;
+        }
+
+        .form-container .form-itself .control-flow #btn {
+
+            background-color: green;
+            border: none;
+            padding: 10px 0;
+            color: white;
+            cursor: pointer;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="showcase">
+        <div class="form-container">
+            <div class="head-content">
+                <h2>Sign Up</h2>
+                <p>Its free and only takes a minute</p>
+            </div>
+            <form action="#" class="form-itself">
+                <div class="control-flow">
+                    <label for="first-name">First Name</label>
+                    <input type="name" name="first-name" id="first-name">
+                </div>
+                <div class="control-flow">
+                    <label for="last-name">Last Name</label>
+                    <input type="name" name="last-name" id="last-name">
+                </div>
+                <div class="control-flow">
+                    <label for="emal">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="control-flow">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="control-flow">
+                    <label for="confirmation">Confirm Password</label>
+                    <input type="password" name="confirmation" id="confirmation">
+                </div>
+                <div class="control-flow">
+                    <input id="btn" type="submit" value="Sign Up" name="submit">
+                </div>
+                <p>By clicking the sign-up button you agree to our <br> <a href="#">Terms & Conditions</a> and <a href="#">Private Policy</a> </p>
+            </form>
+        </div>
+        <p>Already have an account? <a href="#">Login Here</a></p>
+    </div>
+</body>
+</html>

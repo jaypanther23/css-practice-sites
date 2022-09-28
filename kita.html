@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kita Timeline</title>
+    <script src="https://kit.fontawesome.com/4b1407df93.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --primary-color: rgb(238, 172, 51);
+            --secondary-color: rgb(223, 65, 65); 
+            --text-color: white; 
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            font-family:Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+            
+        }
+
+        #resume {
+            padding: 30px 0;
+            background-color: var(--secondary-color);
+            width: 100%;
+        }
+
+        #resume .container {
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+            
+        }
+
+        #resume .container h1 {
+            margin-bottom: 10px;
+            
+        }
+
+        .timeline {
+            padding: 30px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .timeline ul {
+            list-style: none;
+            padding-top: 20px;
+            
+        }
+
+        .timeline ul li {
+            width: 6px;
+            background-color: white;
+            position: relative;
+            border: 2px solid white;
+            padding-top: 35px;
+        }
+
+        .timeline ul li:last-child {
+            padding-bottom: 35px;
+        }
+
+        .timeline ul li div {
+            position: relative;
+            width: 400px;
+            left: 40px;
+            background-color: var(--secondary-color);
+            margin: auto;
+            padding: 1rem;
+        }
+
+
+        .timeline ul li:nth-child(even) div {
+            left: -440px;
+        }
+
+        /*dot*/
+
+        .timeline ul li:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 20px;
+            height: 20px;
+            background-color: var(--secondary-color);
+            left: -8px;
+        }
+
+        /*messanger*/
+
+        .timeline ul li:nth-child(odd) div:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -15px;
+            border-style: solid;
+            border-width: 8px 16px 8px 0px;
+            border-color:  transparent var(--secondary-color) ;
+        }
+
+        .timeline ul li:nth-child(even) div:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 400px;
+            border-style: solid;
+            border-width: 8px 0px 8px 16px;
+            border-color:  transparent var(--secondary-color);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header id="resume">
+        <div class="container">
+            <h1><i class="fa-solid fa-brain"></i> Knowledge Resume</h1>
+            <h3><i class="fa-solid fa-user"></i> Kita Montgomary</h3>
+        </div>
+    </header>
+    <section class="timeline">
+        <ul>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, numquam. Nesciunt 
+                        vel placeat accusamus nemo tempore qui quod necessitatibus labore!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, numquam. Nesciunt 
+                        vel placeat accusamus nemo tempore qui quod necessitatibus labore!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, numquam. Nesciunt 
+                        vel placeat accusamus nemo tempore qui quod necessitatibus labore!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, numquam. Nesciunt 
+                        vel placeat accusamus nemo tempore qui quod necessitatibus labore!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, numquam. Nesciunt 
+                        vel placeat accusamus nemo tempore qui quod necessitatibus labore!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, numquam. Nesciunt 
+                        vel placeat accusamus nemo tempore qui quod necessitatibus labore!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, numquam. Nesciunt 
+                        vel placeat accusamus nemo tempore qui quod necessitatibus labore!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, numquam. Nesciunt 
+                        vel placeat accusamus nemo tempore qui quod necessitatibus labore!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, numquam. Nesciunt 
+                        vel placeat accusamus nemo tempore qui quod necessitatibus labore!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2007: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, numquam. Nesciunt 
+                        vel placeat accusamus nemo tempore qui quod necessitatibus labore!</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

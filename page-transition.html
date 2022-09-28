@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation</title>
+
+    <script src="https://kit.fontawesome.com/4b1407df93.js" crossorigin="anonymous"></script>
+    <style>
+        :root{
+            --page-1-color: rgba(0, 110, 255, 0.692);
+            --page-2-color: tan;
+            --page-3-color: rgb(196, 94, 47);
+            --page-4-color: green;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family:Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            overflow: hidden;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            background: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 1.5rem;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .bg-dark {
+            background: white;
+            color: black;
+        }
+
+        .bg-dark:hover {
+            background: black;
+            color:white;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            padding: 5rem;
+        }
+
+        .page h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            
+        }
+
+        #page-1 h1 {
+            transform: translateY(-1200px);
+            animation: heading 0.3s forwards ease-in;
+        }
+
+        #page-1 p {
+            transform: translateX(-1200px);
+            animation: text 1s forwards ease-in;
+        }
+
+        /* Keyframes */
+
+        @keyframes heading {
+
+            to {transform: translateY(0px);}
+            
+        }
+
+        @keyframes text {
+            to {
+                transform: translateX(0px);
+            }
+        }
+        
+
+        #page-1 {
+            background-color: var(--page-1-color);
+        }
+        #page-2 {
+            background-color: var(--page-2-color);
+        }
+        #page-3 {
+            background-color: var(--page-3-color);
+        }
+        #page-4 {
+            background-color: var(--page-4-color);
+        }
+
+    </style>
+
+</head>
+<body>
+    <section id="page-1" class="page">
+        <h1>
+            Welcome To My Presentation
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quidem placeat laudantium hic quia culpa! Voluptatum perspiciatis 
+            natus veritatis alias expedita nam. Soluta reiciendis 
+            in ipsa reprehenderit officiis nihil laborum quas?
+        </p>
+        <div class="button">
+            <a href="#page-2" class="btn">Next page <i class="fa-solid fa-circle-arrow-down"></i></a>
+        </div>
+    </section>
+    <section id="page-2" class="page">
+        <h1>
+            Page 2
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quidem placeat laudantium hic quia culpa! Voluptatum perspiciatis 
+            natus veritatis alias expedita nam. Soluta reiciendis 
+            in ipsa reprehenderit officiis nihil laborum quas?
+        </p>
+        <div class="button">
+            <a href="#page-1" class="btn">Previous page <i class="fa-solid fa-circle-arrow-up"></i></a>
+            <a href="#page-3" class="btn bg-dark">Next page <i class="fa-solid fa-circle-arrow-down"></i></a>
+        </div>
+    </section>
+    <section id="page-3" class="page">
+        <h1>
+            Page 3
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quidem placeat laudantium hic quia culpa! Voluptatum perspiciatis 
+            natus veritatis alias expedita nam. Soluta reiciendis 
+            in ipsa reprehenderit officiis nihil laborum quas?
+        </p>
+        <div class="button">
+            <a href="#page-2" class="btn"> Previous page <i class="fa-solid fa-circle-arrow-up"></i></a>
+            <a href="#page-4" class="btn bg-dark">Next page <i class="fa-solid fa-circle-arrow-down"></i></a>
+        </div>
+    </section>
+    <section id="page-4" class="page">
+        <h1>
+            Page 4
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quidem placeat laudantium hic quia culpa! Voluptatum perspiciatis 
+            natus veritatis alias expedita nam. Soluta reiciendis 
+            in ipsa reprehenderit officiis nihil laborum quas?
+        </p>
+        <div class="button">
+            <a href="#page-3" class="btn">Previous page <i class="fa-solid fa-circle-arrow-up"></i></a>
+        </div>
+    </section>
+</body>
+</html>
